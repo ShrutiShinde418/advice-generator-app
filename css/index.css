@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-darkGrayishBlue rounded-xl sm:p-11 px-7 py-12;
+  max-width: 34rem;
+}
+
+.heading {
+  @apply text-center uppercase text-green tracking-more font-extrabold text-xs mb-6;
+}
+
+.btn {
+  @apply bg-green p-5 rounded-full self-center absolute -bottom-8 transition hover:shadow-[0_0_1rem_1rem_rgba(82,255,168,.25)];
+}
+
+.advice {
+  @apply text-center sm:text-[28px] text-[25px] text-cyan sm:mb-9 mb-7;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 24rem;
+  }
+}
